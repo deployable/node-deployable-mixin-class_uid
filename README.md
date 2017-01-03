@@ -2,25 +2,42 @@
 
 Node Class UUID Mixin
 
-### Install
+Attach a UUID to a class as `class_uid` and add `generateUuid()` helper functions
+
+## Install
  
-    npm install deployable-mixin-class-uuid --save
+    npm install deployable-mixin-class_uid --save
 
-    yarn add deployable-mixin-class-uuid
+    yarn add deployable-mixin-class_uid
 
-### Usage
+## Usage
 
 ```javascript
 
-const deployable-mixin-class-uuid = require('deployable-mixin-class-uuid')
-deployable-mixin-class-uuid.demo()
+const mix = require('mixwith').mix
+const MixinClassUid = require('deployable-mixin-class_uid')
+class SomeMix = {}
+class Some extends mix(SomeMix).with(MixinClassUid) {}
+
+let obj = new Some()
+console.log(obj.class_uid)
+console.log(obj.generateUuid())
 
 ```
 
-### License
+## API
 
-deployable-mixin-class-uuid is released under the MIT license.
+### `Class.generateUuid(version)`
+
+### `.class_uid`
+
+### `.generateUuid(version)`
+
+
+## License
+
+deployable-mixin-class_uid is released under the MIT license.
 Copyright 2016 Matt Hoyle <code at deployable.co>
 
-https://github.com/deployable/deployable-mixin-class-uuid
+https://github.com/deployable/deployable-mixin-class_uid
 
