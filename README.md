@@ -29,10 +29,15 @@ console.log(obj.generateUuid())
 
 ### `Class.generateUuid(version)`
 
+Static method to generate a uuid. Pass a version `v1` or `v4`
+
 ### `.class_uid`
+
+Get or set the uid on the class via a property
 
 ### `.generateUuid(version)`
 
+Instance method to generate a uuid. Pass a version `v1` or `v4`
 
 ## License
 
