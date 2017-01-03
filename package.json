@@ -1,0 +1,36 @@
+{
+  "name": "deployable-mixin-class_uid",
+  "version": "0.1.0",
+  "description": "Node Class UUID Mixin",
+  "main": "lib/mixin_class_uid.js",
+  "scripts": {
+    "test": "mocha",
+    "test:debug": "DEBUG='*' mocha debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deployable/node-deployable-mixin-class_uid.git"
+  },
+  "keywords": [
+    "deployable",
+    "module",
+    "mixin",
+    "uuid"
+  ],
+  "author": "Matt Hoyle <code at deployable.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deployable/node-deployable-mixin-class_uid/issues"
+  },
+  "homepage": "https://github.com/deployable/node-deployable-mixin-class_uid#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6"
+  },
+  "dependencies": {
+    "debug": "^2",
+    "mixwith": "~0.1.1",
+    "uuid": "~3.0.1"
+  }
+}
